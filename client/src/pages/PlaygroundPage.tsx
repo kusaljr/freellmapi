@@ -872,6 +872,11 @@ export default function PlaygroundPage({
                 ))}
               </div>
             </div>
+
+            {/* Clean minimalist text for mobile viewports */}
+            <div className="flex sm:hidden w-full min-h-full flex-col justify-center items-center">
+              <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-200 text-center animate-in fade-in duration-300">How can I help?</h1>
+            </div>
           </div>
         ) : (
           <div className="flex-1 overflow-y-auto px-4 sm:px-6 pt-8 pb-6 bg-[#fafafa]/30 dark:bg-zinc-950/20">
